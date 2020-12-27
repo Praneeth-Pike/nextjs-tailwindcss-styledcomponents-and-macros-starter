@@ -1,0 +1,119 @@
+:root {
+	--baseSize: 14;
+
+	--white: #fff;
+
+	--gray-50: #fafbfb;
+	--gray-100: #e8e8ec;
+	--gray-200: #d1d2d9;
+	--gray-300: #b9bbc6;
+	--gray-400: #a2a4b4;
+	--gray-500: #e8e8ec;
+	--gray-600: #8b8da1;
+	--gray-700: #616377;
+	--gray-800: #8a8a99;
+
+	/* brickred */
+
+	--brickred-100: #feeeee;
+	--brickred-200: #fedddd;
+	--brickred-300: #fdcccc;
+	--brickred-400: #fcbbbb;
+	--brickred-500: #fca9a9;
+	--brickred-600: #fb9898;
+	--brickred-700: #fa8787;
+	--brickred-800: #fa7676;
+
+	/* Sky Blue */
+
+	--skyblue-100: #e8f9ff;
+	--skyblue-200: #d1f3ff;
+	--skyblue-300: #baedff;
+	--skyblue-400: #a4e7ff;
+	--skyblue-500: #8de0ff;
+	--skyblue-600: #76daff;
+	--skyblue-700: #5fd4ff;
+	--skyblue-800: #48ceff;
+	--skyblue-900: #1fc3ff;
+	--skyblue-1000: #00b4f5;
+	--skyblue-1100: #0096cc;
+	--skyblue-1200: #0078a4;
+
+	/* Steel Blue*/
+
+	--steelblue-100: #eff4ff;
+	--steelblue-200: #dfe8ff;
+	--steelblue-300: #cfddff;
+	--steelblue-400: #bfd1ff;
+	--steelblue-500: #aec6ff;
+	--steelblue-600: #9ebaff;
+	--steelblue-700: #8eafff;
+	--steelblue-800: #7ea3ff;
+
+	/* bluishgray */
+
+	--bluishgray-100: #f2f4f7;
+	--bluishgray-200: #e7e8f4;
+	--bluishgray-300: #dbddee;
+	--bluishgray-400: #cfd2e8;
+	--bluishgray-500: #c3c6e2;
+	--bluishgray-600: #b7bbdd;
+	--bluishgray-700: #abafd7;
+	--bluishgray-800: #9fa4d1;
+
+	/* black */
+
+	--black-100: #dedfe4;
+	--black-200: #bebfca;
+	--black-300: #9d9faf;
+	--black-400: #7c7f95;
+	--black-500: #606276;
+	--black-600: #454755;
+	--black-700: #2b2c34;
+	--black-800: #101014;
+
+	/**
+		*
+		* sm: 320px
+		* md: 768px
+		* lg: 1024px
+		* xl: 1920px
+	*/
+
+	--sm: 320px;
+	--md: 786px;
+	--lg: 1024px;
+	--xl: 1920px;
+
+	/*
+		Cubic Beziers
+	*/
+	--standard: "cubic-bezier(0.4, 0.0, 0.2, 1)";
+	--decelerate: "cubic-bezier(0.0, 0.0, 0.2, 1)";
+	--accelerate: "cubic-bezier(0.4, 0.0, 1, 1)";
+}
+
+html {
+	font-size: 14px; /*base for rem calc i.e, 1rem = 14px;*/
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+	font-size: 13px; /*base for rem calc i.e, 1rem = 14px;*/
+}
+
+@media only screen and (min-width: 375px) {
+	html {
+		font-size: 16px; /*base for rem calc i.e, 1rem = 14px;*/
+	}
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: white;
+	background: var(--black-800);
+}
+
+::selection {
+	color: white;
+	background: var(--black-800);
+}
